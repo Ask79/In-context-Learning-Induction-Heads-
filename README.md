@@ -95,6 +95,7 @@ When the query position was changed from 100 to 101, the dominant attention targ
 Example:
 
 Query position 100 -> attention focuses on earlier answer position 5
+
 Query position 101 -> attention focuses on earlier answer position 6
 
 This suggests that the model is not fixated on one arbitrary position. Instead, attention appears to move with the repeated pattern structure and retrieve useful continuation tokens from earlier copies.
@@ -137,8 +138,11 @@ Compare toy-model behavior with larger-model behavior.
 ## Repository Structure
 
 src/
+
 ├── data.py
+
 ├── main.py
+
 └── train.py
 
 metrics_1layer.json
